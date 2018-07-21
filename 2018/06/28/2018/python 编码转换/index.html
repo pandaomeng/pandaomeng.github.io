@@ -108,25 +108,29 @@
 
 
 
-  <meta name="description" content="（expect 可能需要安装） 12345678910111213141516171819#!/usr/bin/expectset timeout 60set host ***.**.**.***set name rootset password 123456spawn ssh $host -l $nameexpect &amp;#123;      &amp;quot;(yes/no)?&amp;quot; &amp;#123">
-<meta name="keywords" content="linux">
+  <meta name="description" content="Python3 编码转换前言在做爬虫的时候，看到数据中有如下的数据：  文本如下： 1è§æ½®å¥å®¸åº1ã2ã9ã10ã13å·æ¥¼ 这种奇怪的字符是因为二进制码被decode为了’iso-8859-1’的编码格式，而不是正确的’utf8’ python3的编码与解码 encode (编码) : 将字符串转成二进制 语法: 1str.encode(encoding">
+<meta name="keywords" content="python3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="实现ssh 自动登录">
-<meta property="og:url" content="http://yoursite.com/2018/05/30/2018/linux之expect/index.html">
+<meta property="og:title" content="python3 编码转换">
+<meta property="og:url" content="http://yoursite.com/2018/06/28/2018/python 编码转换/index.html">
 <meta property="og:site_name" content="Pandaomeng&#39;s Blog">
-<meta property="og:description" content="（expect 可能需要安装） 12345678910111213141516171819#!/usr/bin/expectset timeout 60set host ***.**.**.***set name rootset password 123456spawn ssh $host -l $nameexpect &amp;#123;      &amp;quot;(yes/no)?&amp;quot; &amp;#123">
+<meta property="og:description" content="Python3 编码转换前言在做爬虫的时候，看到数据中有如下的数据：  文本如下： 1è§æ½®å¥å®¸åº1ã2ã9ã10ã13å·æ¥¼ 这种奇怪的字符是因为二进制码被decode为了’iso-8859-1’的编码格式，而不是正确的’utf8’ python3的编码与解码 encode (编码) : 将字符串转成二进制 语法: 1str.encode(encoding">
 <meta property="og:locale" content="中文">
-<meta property="og:updated_time" content="2018-07-21T07:50:13.894Z">
+<meta property="og:image" content="http://images.pandaomeng.com/blog/2018-06-28-141626.jpg">
+<meta property="og:image" content="http://images.pandaomeng.com/blog/2018-06-28-144100.png">
+<meta property="og:image" content="http://images.pandaomeng.com/blog/2018-06-28-144914.png">
+<meta property="og:updated_time" content="2018-07-21T07:50:13.898Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="实现ssh 自动登录">
-<meta name="twitter:description" content="（expect 可能需要安装） 12345678910111213141516171819#!/usr/bin/expectset timeout 60set host ***.**.**.***set name rootset password 123456spawn ssh $host -l $nameexpect &amp;#123;      &amp;quot;(yes/no)?&amp;quot; &amp;#123">
+<meta name="twitter:title" content="python3 编码转换">
+<meta name="twitter:description" content="Python3 编码转换前言在做爬虫的时候，看到数据中有如下的数据：  文本如下： 1è§æ½®å¥å®¸åº1ã2ã9ã10ã13å·æ¥¼ 这种奇怪的字符是因为二进制码被decode为了’iso-8859-1’的编码格式，而不是正确的’utf8’ python3的编码与解码 encode (编码) : 将字符串转成二进制 语法: 1str.encode(encoding">
+<meta name="twitter:image" content="http://images.pandaomeng.com/blog/2018-06-28-141626.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/30/2018/linux之expect/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/28/2018/python 编码转换/"/>
 
 
 
@@ -136,7 +140,7 @@
   };
 </script>
 
-  <title>实现ssh 自动登录 | Pandaomeng's Blog</title>
+  <title>python3 编码转换 | Pandaomeng's Blog</title>
   
 
 
@@ -281,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/30/2018/linux之expect/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/28/2018/python 编码转换/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="pandaomeng">
@@ -298,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">实现ssh 自动登录
+          <h1 class="post-title" itemprop="name headline">python3 编码转换
               
             
           </h1>
@@ -323,7 +327,7 @@
                 
               
 
-              <time title="Created: 2018-05-30 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-30T00:00:00+08:00">2018-05-30</time>
+              <time title="Created: 2018-06-28 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-28T00:00:00+08:00">2018-06-28</time>
             
 
             
@@ -373,15 +377,34 @@
       
 
       
-        <p>（expect 可能需要安装）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/expect</span><br><span class="line"></span><br><span class="line">set timeout 60</span><br><span class="line">set host ***.**.**.***</span><br><span class="line">set name root</span><br><span class="line">set password 123456</span><br><span class="line"></span><br><span class="line">spawn ssh $host -l $name</span><br><span class="line">expect &#123;</span><br><span class="line">      &quot;(yes/no)?&quot; &#123;</span><br><span class="line">           send &quot;yes\n&quot;</span><br><span class="line">           expect &quot;password:&quot;</span><br><span class="line">           send   &quot;$password\n&quot;</span><br><span class="line">      &#125;</span><br><span class="line">      &quot;password:&quot;  &#123;</span><br><span class="line">          send &quot;$password\n&quot;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br><span class="line">interact</span><br></pre></td></tr></table></figure>
-<p><strong>PS: </strong></p>
+        <h1 id="Python3-编码转换"><a href="#Python3-编码转换" class="headerlink" title="Python3 编码转换"></a>Python3 编码转换</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在做爬虫的时候，看到数据中有如下的数据：</p>
+<p><img src="http://images.pandaomeng.com/blog/2018-06-28-141626.jpg" alt=""></p>
+<p>文本如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">è§æ½®å¥å®¸åº1ã2ã9ã10ã13å·æ¥¼</span><br></pre></td></tr></table></figure>
+<p>这种奇怪的字符是因为二进制码被decode为了’iso-8859-1’的编码格式，而不是正确的’utf8’</p>
+<h2 id="python3的编码与解码"><a href="#python3的编码与解码" class="headerlink" title="python3的编码与解码"></a>python3的编码与解码</h2><ul>
+<li><p>encode (编码) : 将字符串转成二进制</p>
+<p>语法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.encode(encoding=&apos;UTF-8&apos;,errors=&apos;strict&apos;)</span><br></pre></td></tr></table></figure>
+<p>ps: </p>
 <ul>
-<li>spawn命令：spawn是进入expect环境后才可以执行的expect内部命令。</li>
-<li>interact：执行完成后保持交互状态，把控制权交给控制台，这个时候就可以手工操作了。</li>
+<li>‘UTF-8’ 中大小写不敏感，短横杠可有可无, 举个栗子: str.encode(‘uTf8’) 也可以。</li>
+<li>默认使用UTF-8编码</li>
 </ul>
-<h4 id="实现git自动pull（http）"><a href="#实现git自动pull（http）" class="headerlink" title="实现git自动pull（http）"></a>实现git自动pull（http）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/expect -f</span><br><span class="line">set uname pandaomeng</span><br><span class="line">set password 123456</span><br><span class="line">set timeout 3</span><br><span class="line"></span><br><span class="line">cd /home/workspaces/vue-demo #项目路径</span><br><span class="line">spawn git pull origin dev</span><br><span class="line">expect &quot;*Username*&quot; &#123;send &quot;$uname\r&quot;; exp_continue&#125;</span><br><span class="line">expect &quot;*Password*&quot; &#123;send &quot;$password\r&quot;&#125;</span><br><span class="line">interact</span><br></pre></td></tr></table></figure>
-<p>##### </p>
+</li>
+<li><p>Decode (解码) : 将二进制码转为指定编码的字符串</p>
+<p>语法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bytes.decode(encoding=&quot;utf-8&quot;, errors=&quot;strict&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="出现编码错误的原因"><a href="#出现编码错误的原因" class="headerlink" title="出现编码错误的原因"></a>出现编码错误的原因</h2><p>浏览器将使用了错误的解码方式解码了二进制数据</p>
+<p>解决办法：先使用和浏览器一样的错误编码方式编码后，再使用正确的解码方式解码。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = &apos;è§æ½®å¥å®¸åº1ã2ã9ã10ã13å·æ¥¼&apos;</span><br><span class="line">b = a.encode(&apos;iso-8859-1&apos;)</span><br><span class="line">print(&apos;b: &apos;, b)</span><br><span class="line">c = b.decode()</span><br><span class="line">print(&apos;c: &apos;, c)</span><br></pre></td></tr></table></figure>
+<p>结果如下：</p>
+<p><img src="http://images.pandaomeng.com/blog/2018-06-28-144100.png" alt=""></p>
+<p>缩略图：</p>
+<p><img src="http://images.pandaomeng.com/blog/2018-06-28-144914.png" alt=""></p>
+<p>成功解码！</p>
 
       
     </div>
@@ -402,7 +425,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/python3/" rel="tag"># python3</a>
           
         </div>
       
@@ -415,8 +438,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/30/2018/sublime3-eslint-prompt/" rel="next" title="SublimeText3 配置 eslint提示">
-                <i class="fa fa-chevron-left"></i> SublimeText3 配置 eslint提示
+              <a href="/2018/06/22/2018/vue配置history模式/" rel="next" title="vue配置history模式">
+                <i class="fa fa-chevron-left"></i> vue配置history模式
               </a>
             
           </div>
@@ -425,8 +448,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/07/2018/mac-sublime-hotkey/" rel="prev" title="Mac Sublime 快捷键">
-                Mac Sublime 快捷键 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/21/2018/link/" rel="prev" title="友情链接">
+                友情链接 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -568,7 +591,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#实现git自动pull（http）"><span class="nav-number">1.</span> <span class="nav-text">实现git自动pull（http）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python3-编码转换"><span class="nav-number">1.</span> <span class="nav-text">Python3 编码转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python3的编码与解码"><span class="nav-number">1.2.</span> <span class="nav-text">python3的编码与解码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#出现编码错误的原因"><span class="nav-number">1.3.</span> <span class="nav-text">出现编码错误的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.4.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
             
 
           </div>
