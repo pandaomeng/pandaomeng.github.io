@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="中文">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Think Aloud">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pandaomeng&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Pandaomeng&#39;s Blog">
+<meta property="og:description" content="Think Aloud">
+<meta property="og:locale" content="中文">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pandaomeng&#39;s Blog">
+<meta name="twitter:description" content="Think Aloud">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Pandaomeng's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="中文">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Pandaomeng's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/28/python 编码转换/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/28/python 编码转换/" itemprop="url">
+                  python3 编码转换
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-28 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-28T00:00:00+08:00">2018-06-28</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Python3-编码转换"><a href="#Python3-编码转换" class="headerlink" title="Python3 编码转换"></a>Python3 编码转换</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在做爬虫的时候，看到数据中有如下的数据：</p>
+<p><img src="http://images.pandaomeng.com/blog/2018-06-28-141626.jpg" alt=""></p>
+<p>文本如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">è§æ½®å¥å®¸åº1ã2ã9ã10ã13å·æ¥¼</span><br></pre></td></tr></table></figure>
+<p>这种奇怪的字符是因为二进制码被decode为了’iso-8859-1’的编码格式，而不是正确的’utf8’</p>
+<h2 id="python3的编码与解码"><a href="#python3的编码与解码" class="headerlink" title="python3的编码与解码"></a>python3的编码与解码</h2><ul>
+<li><p>encode (编码) : 将字符串转成二进制</p>
+<p>语法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.encode(encoding=&apos;UTF-8&apos;,errors=&apos;strict&apos;)</span><br></pre></td></tr></table></figure>
+<p>ps: </p>
+<ul>
+<li>‘UTF-8’ 中大小写不敏感，短横杠可有可无, 举个栗子: str.encode(‘uTf8’) 也可以。</li>
+<li>默认使用UTF-8编码</li>
+</ul>
+</li>
+<li><p>Decode (解码) : 将二进制码转为指定编码的字符串</p>
+<p>语法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bytes.decode(encoding=&quot;utf-8&quot;, errors=&quot;strict&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="出现编码错误的原因"><a href="#出现编码错误的原因" class="headerlink" title="出现编码错误的原因"></a>出现编码错误的原因</h2><p>浏览器将使用了错误的解码方式解码了二进制数据</p>
+<p>解决办法：先使用和浏览器一样的错误编码方式编码后，再使用正确的解码方式解码。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = &apos;è§æ½®å¥å®¸åº1ã2ã9ã10ã13å·æ¥¼&apos;</span><br><span class="line">b = a.encode(&apos;iso-8859-1&apos;)</span><br><span class="line">print(&apos;b: &apos;, b)</span><br><span class="line">c = b.decode()</span><br><span class="line">print(&apos;c: &apos;, c)</span><br></pre></td></tr></table></figure>
+<p>结果如下：</p>
+<p><img src="http://images.pandaomeng.com/blog/2018-06-28-144100.png" alt=""></p>
+<p>缩略图：</p>
+<p><img src="http://images.pandaomeng.com/blog/2018-06-28-144914.png" alt=""></p>
+<p>成功解码！</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/22/2018/vue配置history模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/22/2018/vue配置history模式/" itemprop="url">
+                  vue配置history模式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-22 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-22T00:00:00+08:00">2018-06-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="vue配置history模式"><a href="#vue配置history模式" class="headerlink" title="vue配置history模式"></a>vue配置history模式</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>引用官方的解释：</p>
+<p><a href="https://router.vuejs.org/zh/guide/essentials/history-mode.html" target="_blank" rel="noopener">HTML5 History 模式</a></p>
+<p><code>vue-router</code> 默认 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL，于是当 URL 改变时，页面不会重新加载。</p>
+<p>默认的hash模式的url像这样：<code>http://yoursite.com/index.html#/user/id</code></p>
+<p>改为history模式后的url: <code>http://yoursite.com/user/id</code></p>
+<p>去掉#号的url好看了很多，那就让我们开始吧</p>
+<h2 id="前端配置"><a href="#前端配置" class="headerlink" title="前端配置"></a>前端配置</h2><h3 id="vue-路由配置修改"><a href="#vue-路由配置修改" class="headerlink" title="vue 路由配置修改"></a>vue 路由配置修改</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const router = new VueRouter(&#123;</span><br><span class="line">  mode: &apos;history&apos;,</span><br><span class="line">  routes: [...]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="后端配置"><a href="#后端配置" class="headerlink" title="后端配置"></a>后端配置</h2><h3 id="Apache-配置"><a href="#Apache-配置" class="headerlink" title="Apache 配置"></a>Apache 配置</h3><ol>
+<li><p>确保apache的rewrite模块开启</p>
+</li>
+<li><p>在项目的更目录，和index.html同级，创建一个文件.htaccess</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">  RewriteEngine On</span><br><span class="line">  RewriteBase /</span><br><span class="line">  RewriteRule ^index\.html$ - [L]</span><br><span class="line">  RewriteCond %&#123;REQUEST_FILENAME&#125; !-f</span><br><span class="line">  RewriteCond %&#123;REQUEST_FILENAME&#125; !-d</span><br><span class="line">  RewriteRule . /index.html [L]</span><br><span class="line">&lt;/IfModule&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启apache2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service apache2 restart</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Nginx-配置："><a href="#Nginx-配置：" class="headerlink" title="Nginx 配置："></a>Nginx 配置：</h2><ol>
+<li><p>修改配置文件 <code>xxx.server</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">	......</span><br><span class="line">	try_files $uri $uri/ /index.html;</span><br><span class="line">	root /home/sourcecode/dist;</span><br><span class="line">	......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中 root路径 为项目打包好的文件夹路径</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/21/2018/2018-06-21-linux之profile、bash_profile、bashrc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/21/2018/2018-06-21-linux之profile、bash_profile、bashrc/" itemprop="url">
+                  linux之profile、bash_profile、bashrc
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-21 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-21T00:00:00+08:00">2018-06-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux之profile、bash-profile、bashrc"><a href="#linux之profile、bash-profile、bashrc" class="headerlink" title="linux之profile、bash_profile、bashrc"></a>linux之profile、bash_profile、bashrc</h1><h2 id="profile、bash-profile、bashrc文件"><a href="#profile、bash-profile、bashrc文件" class="headerlink" title="profile、bash_profile、bashrc文件"></a>profile、bash_profile、bashrc文件</h2><ol>
+<li><p><code>profile</code> (/etc/profile`)</p>
+<p>用于设置系统级的环境变量和启动程序，在这个文件下配置会对<strong>所有用户</strong>生效。当用户登录（<code>login</code>）时，文件会被执行。</p>
+</li>
+<li><p><code>bashrc</code> (/etc/bashrc)</p>
+<p>这个文件用于配置函数或别名。<code>bashrc</code>文件有两种级别：系统级的位于<code>/etc/bashrc</code>、用户级的<code>~/.bashrc</code>，两者分别会对所有用户和当前用户生效。 </p>
+</li>
+<li><p><code>bash_profile</code> (~/.bash_profile)</p>
+<p><code>bash_profile</code>只有单一用户有效，文件存储位于<code>~/.bash_profile</code>，该文件是一个用户级的设置，可以理解为某一个用户的<code>profile</code>目录下。这个文件同样也可以用于配置环境变量和启动程序，但只针对单个用户有效。</p>
+<p>和<code>profile</code>文件类似，<code>bash_profile</code>也会在用户登录（<code>login</code>）时生效，也可以用于设置环境变理。但与<code>profile</code>不同，<code>bash_profile</code>只会对当前用户生效。</p>
+</li>
+</ol>
+<h2 id="设置alias别名"><a href="#设置alias别名" class="headerlink" title="设置alias别名"></a>设置alias别名</h2><ol>
+<li><p>编辑.bashrc文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias ll=&apos;ls -l&apos;</span><br></pre></td></tr></table></figure>
+<p>注意：等号两边不能有空格</p>
+<p>保存退出</p>
+</li>
+<li><p>使配置文件生效</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试设置的命令是否生效</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/07/2018/mac-sublime-hotkey/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/07/2018/mac-sublime-hotkey/" itemprop="url">
+                  Mac Sublime 快捷键
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-07 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-07T00:00:00+08:00">2018-06-07</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Mac-Sublime-快捷键"><a href="#Mac-Sublime-快捷键" class="headerlink" title="Mac Sublime 快捷键"></a>Mac Sublime 快捷键</h1><table>
+<thead>
+<tr>
+<th>按键</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⌘ + ⇧ + P</td>
+<td>命令提示（非常常用）</td>
+</tr>
+<tr>
+<td>⌘ + K, ⌘ + B</td>
+<td>侧边栏打开/关闭切换</td>
+</tr>
+<tr>
+<td>⌘ + ⌥ + 2</td>
+<td>拆分窗口，双列显示</td>
+</tr>
+<tr>
+<td>⌘ + D</td>
+<td>选择词 – 重复按下时多重选择相同的词进行多重编辑</td>
+</tr>
+<tr>
+<td>⌘ + ⌃ + ↑</td>
+<td>向上移动当前行/所选行</td>
+</tr>
+<tr>
+<td>⌘ + ⇧ + F</td>
+<td>在所有打开的文件中进行查找</td>
+</tr>
+<tr>
+<td>⌘ + P</td>
+<td>通过文件名快速打开</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/30/2018/docker-lamp/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/30/2018/docker-lamp/" itemprop="url">
+                  使用docker运行一个lamp环境
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-30 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-30T00:00:00+08:00">2018-05-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="使用docker运行一个lamp环境"><a href="#使用docker运行一个lamp环境" class="headerlink" title="使用docker运行一个lamp环境"></a>使用docker运行一个lamp环境</h1><h2 id="执行步骤"><a href="#执行步骤" class="headerlink" title="执行步骤"></a>执行步骤</h2><ol>
+<li><p>拉取lamp镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search lamp</span><br></pre></td></tr></table></figure>
+<p>本文挑选 fauria/lamp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull fauria/lamp</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行容器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name cocos2d-h5 -it -p 1234:80 -v /Users/pandaomeng/cocos2d/cocos2d-js-v3.13-lite:/var/www/html fauria/lamp  /bin/bash</span><br></pre></td></tr></table></figure>
+<p>执行完命令后会进入到容器内部。</p>
+</li>
+<li><p>打开容器的apache服务</p>
+<p>通过下列命令查看apache2的运行状态：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service apache2 status</span><br></pre></td></tr></table></figure>
+<p>开启apache2：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service apache2 start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将容器挂起</p>
+<p>方法：按住control键，依次按p键和q键</p>
+</li>
+</ol>
+<h2 id="docker其他常用指令"><a href="#docker其他常用指令" class="headerlink" title="docker其他常用指令"></a>docker其他常用指令</h2><ul>
+<li>docker ps 查看当前在运行的容器</li>
+<li>docker ps -a 查看所有容器</li>
+<li>docker start 启动容器</li>
+<li>docker exec -it containterID /bin/bash 进入正在运行的容器内部</li>
+<li>docker search lamp 搜索所有的lamp镜像</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/30/2018/linux之expect/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/30/2018/linux之expect/" itemprop="url">
+                  实现ssh 自动登录
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-30 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-30T00:00:00+08:00">2018-05-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>（expect 可能需要安装）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/expect</span><br><span class="line"></span><br><span class="line">set timeout 60</span><br><span class="line">set host ***.**.**.***</span><br><span class="line">set name root</span><br><span class="line">set password 123456</span><br><span class="line"></span><br><span class="line">spawn ssh $host -l $name</span><br><span class="line">expect &#123;</span><br><span class="line">      &quot;(yes/no)?&quot; &#123;</span><br><span class="line">           send &quot;yes\n&quot;</span><br><span class="line">           expect &quot;password:&quot;</span><br><span class="line">           send   &quot;$password\n&quot;</span><br><span class="line">      &#125;</span><br><span class="line">      &quot;password:&quot;  &#123;</span><br><span class="line">          send &quot;$password\n&quot;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br><span class="line">interact</span><br></pre></td></tr></table></figure>
+<p><strong>PS: </strong></p>
+<ul>
+<li>spawn命令：spawn是进入expect环境后才可以执行的expect内部命令。</li>
+<li>interact：执行完成后保持交互状态，把控制权交给控制台，这个时候就可以手工操作了。</li>
+</ul>
+<h4 id="实现git自动pull（http）"><a href="#实现git自动pull（http）" class="headerlink" title="实现git自动pull（http）"></a>实现git自动pull（http）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/expect -f</span><br><span class="line">set uname pandaomeng</span><br><span class="line">set password 123456</span><br><span class="line">set timeout 3</span><br><span class="line"></span><br><span class="line">cd /home/workspaces/vue-demo #项目路径</span><br><span class="line">spawn git pull origin dev</span><br><span class="line">expect &quot;*Username*&quot; &#123;send &quot;$uname\r&quot;; exp_continue&#125;</span><br><span class="line">expect &quot;*Password*&quot; &#123;send &quot;$password\r&quot;&#125;</span><br><span class="line">interact</span><br></pre></td></tr></table></figure>
+<p>##### </p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/30/2018/linux之杀死进程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/30/2018/linux之杀死进程/" itemprop="url">
+                  linux 之杀死进程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-30 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-30T00:00:00+08:00">2018-05-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在公司经常要重启某一个项目， 我一般的做法是先</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep 项目名</span><br></pre></td></tr></table></figure>
+<p>然后复制该进程的pid，再执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 pid</span><br></pre></td></tr></table></figure>
+<p>再重新执行启动命令。虽然只有几个简单的步骤，但是执行这种重复的操作多了，浪费的时间也就随之增加了。</p>
+<h4 id="查找某程序的pid并保存在变量中"><a href="#查找某程序的pid并保存在变量中" class="headerlink" title="查找某程序的pid并保存在变量中"></a>查找某程序的pid并保存在变量中</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PID=`ps -ef | grep node| grep -v grep | awk -F &apos; &apos; &apos;&#123;print $2&#125;&apos;`</span><br></pre></td></tr></table></figure>
+<p>实例中我要找一个名字中带有node的进程，并把它的pid赋值给PID。</p>
+<p><strong>PS：</strong></p>
+<ul>
+<li>grep node: 筛选出名字中带有node的结果</li>
+<li>grep -v grep：-v 选项表示反选，可以防止这条命令也出现在结果中</li>
+<li>awk：将结果分成数组的形式，通过{print $2}来获取第二个元素</li>
+</ul>
+<h4 id="kill掉该进程"><a href="#kill掉该进程" class="headerlink" title="kill掉该进程"></a>kill掉该进程</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if [ ! -z &quot;$PID&quot; ]; then</span><br><span class="line">    echo $PID</span><br><span class="line">    echo &quot;Node already exists!&quot;</span><br><span class="line">    kill -9 $PID</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<h4 id="接下来"><a href="#接下来" class="headerlink" title="接下来"></a>接下来</h4><p>你就可以为所欲为啦(～￣▽￣)～</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/30/2018/sublime3-eslint-prompt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/30/2018/sublime3-eslint-prompt/" itemprop="url">
+                  SublimeText3 配置 eslint提示
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-30 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-30T00:00:00+08:00">2018-05-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><ol>
+<li>SublimeLinter</li>
+<li>SublimeLinter-eslint</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/30/2018/ubuntu-shadowsocks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/30/2018/ubuntu-shadowsocks/" itemprop="url">
+                  使用Ubuntu搭建Shadowsocks（小飞机）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-30 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-30T00:00:00+08:00">2018-05-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="购买一台海外的vps"><a href="#购买一台海外的vps" class="headerlink" title="购买一台海外的vps"></a>购买一台海外的vps</h2><ol>
+<li><p>我这里选择 vultr <a href="https://www.vultr.com" target="_blank" rel="noopener">https://www.vultr.com</a></p>
+<p>部署一台ubuntu服务器，在本地测试是否ping通</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping ***.**.**.***</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过putty连上服务器</p>
+</li>
+</ol>
+<h2 id="配置服务器端ss"><a href="#配置服务器端ss" class="headerlink" title="配置服务器端ss"></a>配置服务器端ss</h2><p>安装python pip</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install python-pip</span><br><span class="line">sudo apt-get install python-setuptools m2crypto</span><br></pre></td></tr></table></figure>
+<p>安装shadowsocks</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install shadowsocks</span><br></pre></td></tr></table></figure>
+<p>创建 shadowsocks.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch ~/shadowsocks.json</span><br></pre></td></tr></table></figure>
+<p>shadowsocks.json内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;server&quot;: &quot;你的服务器ip&quot;,</span><br><span class="line">  &quot;server_port&quot;: 2333,</span><br><span class="line">  &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">  &quot;local_port&quot;: &quot;1080&quot;,</span><br><span class="line">  &quot;password&quot;: &quot;你的密码&quot;,</span><br><span class="line">  &quot;timeout&quot;: &quot;300&quot;,</span><br><span class="line">  &quot;method&quot;: &quot;aes-256-cfb&quot;,</span><br><span class="line">  &quot;fast_open&quot;: false,</span><br><span class="line">  &quot;workers&quot;: 1,</span><br><span class="line">  &quot;prefer_ipv6&quot;: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>执行下列命令启动shadowsocks:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c shadowsocks.json -d start</span><br></pre></td></tr></table></figure>
+<p>至此，服务器端shadowsocks就配置完毕了</p>
+<h2 id="下载并配置客户端"><a href="#下载并配置客户端" class="headerlink" title="下载并配置客户端"></a>下载并配置客户端</h2><p>window地址：</p>
+<p><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-windows/releases</a></p>
+<p>mac地址：</p>
+<p><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/ShadowsocksX-NG/releases</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/01/2018/移动前端适配/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pandaomeng">
+      <meta itemprop="description" content="Think Aloud">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pandaomeng's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/01/2018/移动前端适配/" itemprop="url">
+                  手机端H5页面适配 踩坑
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-01T00:00:00+08:00">2018-05-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-21 15:50:13" itemprop="dateModified" datetime="2018-07-21T15:50:13+08:00">2018-07-21</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这两天在公司做手机端H5页面，第一次开发没什么经验，对rem, pt, ppi, dpr这些概念完全不懂，看了很多博客，现总结如下。</p>
+<h4 id="对于不同像素宽度的手机，如何做到每一个元素自动缩放？"><a href="#对于不同像素宽度的手机，如何做到每一个元素自动缩放？" class="headerlink" title="对于不同像素宽度的手机，如何做到每一个元素自动缩放？"></a>对于不同像素宽度的手机，如何做到每一个元素自动缩放？</h4><p>rem: font size of the root element</p>
+<p>rem作为一个单位，单位大小由它第一代老祖宗的<strong>font-size</strong>的大小决定，也就是html标签的<strong>font-size</strong>。例如我们设置html的font-size为10px，那么1.2rem就是12px，我们在所有需要用到px的地方全都使用rem来代替，这样我们只需要改变html的font-size就可以动态地改变内部所有元素的尺寸了。</p>
+<p><strong>实例</strong></p>
+<p>我们公司提供了宽度为375pt的设计图（pt后面会解释，暂时理解为px就好）。我以这个版本为基础来写页面。我设置html的font-size为10px，那么设计图上的所有关于pt的标注，我只要除以10，再加上rem作为单位就OK了。然后我只要在初始化页面的函数中加上如下代码，就完成了完美的适配。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let htmlFontSize = 10 * width / 375 + &apos;px&apos;</span><br><span class="line">document.getElementsByTagName(&apos;html&apos;)[0].style.fontSize = htmlFontSize</span><br></pre></td></tr></table></figure>
+<p>举个栗子：此时手机的宽度变成了414pt，那么根据公式，html的font-size动态地变成了11.04px，页面的其他元素也就跟着放大了。</p>
+<p><strong>PS</strong>：</p>
+<ul>
+<li><p>375pt是iphone6/7/8的宽度。</p>
+</li>
+<li><p>414pt是iphone6/7/8 plus的宽度。</p>
+<p>​</p>
+</li>
+</ul>
+<h4 id="pt-和-px-是什么关系呢？"><a href="#pt-和-px-是什么关系呢？" class="headerlink" title="pt 和 px 是什么关系呢？"></a>pt 和 px 是什么关系呢？</h4><p>上面我们说到公司里给出的设计图的单位是pt，而我们写页面的时候使用的单位是px，这两者之间有什么联系呢？我们先了解一下逻辑像素和物理像素，以及一些引伸的概念。</p>
+<ol>
+<li><p><strong>逻辑像素pt（点）</strong></p>
+<p>html css中的使用的单位像素px实际上指的就是逻辑像素pt，一个逻辑像素可能包含多个物理像素（1个，2个或者3个）</p>
+</li>
+<li><p><strong>物理像素px</strong></p>
+<p>这个px并不是我们css中用的px，而是一个一个真实的像素点。是photoshop中用的那个px。</p>
+</li>
+<li><p><strong>dpr</strong>（<strong>device pixel ratio)</strong></p>
+<p>DPR = 物理像素 / 逻辑像素，iphone 3GS的dpr为1，iphone 4/4s的dpr为2。其他型号的dpr见下表。</p>
+</li>
+<li><p><strong>ppi（Pixels Per Inch）</strong></p>
+<p>ppi = 像素数量（pixel） / 显示器的长或宽（inch）</p>
+<p>第一代iphone手机的像素密度是163ppi，但是到了iPhone4的时候像素密度是326ppi (163 * 2)，开发者发现初代的1px(物理像素)和iphone4下的1px(物理像素)显示尺寸(物理尺寸)不相等了，无疑将增加适配的工作量。于是iphone开发者提出了一个pt的概念，即采用初代iphone1个像素点的大小作为基准，记作1pt（point），也就是说1pt在iphone4下的大小=2px的宽高。</p>
+<p>dpr 和 ppi的关系：ppi 和 dpr 成正比</p>
+</li>
+<li><p><strong>安卓的dp</strong></p>
+<p>本质上和ios的pt是一样的</p>
+<p>​</p>
+<p><strong>实例（iphone机型）</strong></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>设备**</strong>iPhone**</th>
+<th><strong>宽**</strong>Width**</th>
+<th><strong>高**</strong>Height**</th>
+<th><strong>对角线**</strong>Diagonal**</th>
+<th><strong>逻辑分辨率(point)</strong></th>
+<th><strong>Scale Factor(dpr)</strong></th>
+<th><strong>设备分辨率(pixel)</strong></th>
+<th><strong>PPI</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3GS</td>
+<td>2.4 inches (62.1 mm)</td>
+<td>4.5 inches (115.5 mm)</td>
+<td>3.5-inch</td>
+<td>320x480</td>
+<td>@1x</td>
+<td>320x480</td>
+<td>163</td>
+</tr>
+<tr>
+<td>4(s)</td>
+<td>2.31 inches (58.6 mm)</td>
+<td>4.5 inches (115.2 mm)</td>
+<td>3.5-inch</td>
+<td>320x480</td>
+<td>@2x</td>
+<td>640x960</td>
+<td>326</td>
+</tr>
+<tr>
+<td>5c</td>
+<td>2.33 inches (59.2 mm)</td>
+<td>4.90 inches (124.4 mm)</td>
+<td>4-inch</td>
+<td>320x568</td>
+<td>@2x</td>
+<td>640x1136</td>
+<td>326</td>
+</tr>
+<tr>
+<td>5(s)</td>
+<td>2.31 inches (58.6 mm)</td>
+<td>4.87 inches (123.8 mm)</td>
+<td>4-inch</td>
+<td>320x568</td>
+<td>@2x</td>
+<td>640x1136</td>
+<td>326</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2.64 inches (67.1 mm)</td>
+<td>5.44 inches (138.3 mm)</td>
+<td>4.7-inch</td>
+<td>375x667</td>
+<td>@2x</td>
+<td>750x1334</td>
+<td>326</td>
+</tr>
+<tr>
+<td>6+</td>
+<td>3.07 inches (77.9 mm)</td>
+<td>6.23 inches (158.2 mm)</td>
+<td>5.5-inch</td>
+<td>414x736</td>
+<td>@3x</td>
+<td>(1242x2208-&gt;)<strong>1080x1920</strong></td>
+<td>401</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">pandaomeng</p>
+              <p class="site-description motion-element" itemprop="description">Think Aloud</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">pandaomeng</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
