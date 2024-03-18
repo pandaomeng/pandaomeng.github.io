@@ -30,7 +30,10 @@ jobs:
       - name: Build
         run: npm run build
       - name: upload to algolia
+        env:
+          HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
         run: npm run algolia
+        
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
