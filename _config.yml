@@ -7,14 +7,14 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Patrick Pan
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://pandaomeng.com
+permalink: :name/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,8 +97,20 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+scheme: Piscs
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+algolia:
+  applicationID: "D5Y09SMT8C"
+  apiKey: "d6fc5f3d13a295a7118797c408831e82"
+  indexName: patrick_blogs
+  fields:
+    - title
+    - content
+    - url
+  debug: false
+  concurrent: 2
