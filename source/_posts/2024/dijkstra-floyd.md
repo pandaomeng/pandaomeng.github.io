@@ -30,3 +30,23 @@ def dijkstra(edges, start, end):
                 heappush(h, (dx + w, y))
     return dist[end] if dist[end] != inf else -1
 ```
+
+# Floyd 模板
+```
+def floyd(edges):
+    w = [[inf] * n for _ in range(n)]
+    for x, y, wt in edges:
+        w[x][y] = wt
+        w[y][x] = wt
+    
+    f = w
+    for k in range(n):
+        for i in range(n):
+            for j in range(n):
+                f[i][j] = min(f[i][j], f[i][k] + f[k][j])
+    return f
+```
+
+```
+f[i][j] 代表 i 到 j 的最短距离 
+```
